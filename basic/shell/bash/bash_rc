@@ -9,3 +9,9 @@ set -o vi
 bind -m vi-insert "Control-l: clear-screen"
 bind -m vi-command "Control-l: clear-screen"
 
+# Enable autojump, see: https://github.com/wting/autojump#manual
+[[ -s /home/lpj/.autojump/etc/profile.d/autojump.sh ]] && source /home/lpj/.autojump/etc/profile.d/autojump.sh
+
+# Enable fzf, see: https://github.com/junegunn/fzf#using-git
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
