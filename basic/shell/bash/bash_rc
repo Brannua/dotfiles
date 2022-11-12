@@ -1,0 +1,11 @@
+BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
+
+[ -f ${BASH_SRC_PATH}/bash_aliases ] && source ${BASH_SRC_PATH}/bash_aliases
+[ -f ${BASH_SRC_PATH}/bash_variables ] && source ${BASH_SRC_PATH}/bash_variables
+[ -f ${BASH_SRC_PATH}/bash_scripts ] && source ${BASH_SRC_PATH}/bash_scripts
+
+# Enable the `VI-MODE` by typing <Esc>
+set -o vi
+bind -m vi-insert "Control-l: clear-screen"
+bind -m vi-command "Control-l: clear-screen"
+

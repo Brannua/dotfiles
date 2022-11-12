@@ -1,0 +1,17 @@
+[user]
+    name = Brannua
+    email = 374453156@qq.com
+
+[core]
+    quotepath = false
+
+[init]
+    defaultBranch = master
+
+[alias]
+    a = add
+    c = commit
+    d = diff
+    s = status
+    l = log --all --oneline --graph --decorate=full
+

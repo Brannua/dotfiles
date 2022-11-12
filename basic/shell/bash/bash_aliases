@@ -1,0 +1,22 @@
+
+alias ghs="sudo cat ${HOME}/Code/access_token.github | xclip -sel clip"
+
+alias ..="cd .."
+alias ...="cd ../.."
+
+alias q=exit
+alias c=clear
+alias l="ls -al"
+alias ll="ls -al"
+alias sl=ls
+
+alias mv="mv -i"
+alias rm="rm -i"
+
+alias s=screenfetch
+alias open=xdg-open
+#alias ra=ranger
+alias v=vim
+
+alias rl="source ~/.bashrc; echo bashrc reloaded."
+

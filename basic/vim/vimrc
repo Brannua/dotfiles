@@ -1,0 +1,165 @@
+
+let mapleader=" "
+
+" ===
+" === Some basic setting
+" ===
+
+syntax on
+
+set nowrap
+set cursorline
+set scrolloff=10
+set number relativenumber
+
+set ignorecase
+set smartcase
+
+set wildmenu
+set incsearch
+
+" ===
+" === Disable bell because it's annoying
+" ===
+
+set noerrorbells visualbell t_vb=
+
+" ===
+" === Config the `Tab`
+" ===
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+
+" ===
+" === Snippits
+" ===
+
+autocmd Filetype markdown inoremap ，1 #<SPACE>
+autocmd Filetype markdown inoremap ，2 ##<SPACE>
+autocmd Filetype markdown inoremap ，3 ###<SPACE>
+autocmd Filetype markdown inoremap ，4 ####<SPACE>
+autocmd Filetype markdown inoremap ，5 #####<SPACE>
+
+autocmd Filetype markdown inoremap ，l ---<ENTER>
+
+autocmd Filetype markdown inoremap ，f <ESC>/<++><CR>c4l
+
+autocmd Filetype markdown inoremap ，a [](<++>) <++><ESC>F[a
+autocmd Filetype markdown inoremap ，p ![](<++>) <++><ESC>F[a
+
+autocmd Filetype markdown inoremap ，b **** <++><ESC>F*hi
+autocmd Filetype markdown inoremap ，s ~~~~ <++><ESC>F~hi
+autocmd Filetype markdown inoremap ，i ** <++><ESC>F*i
+
+autocmd Filetype c,javascript,java,markdown inoremap ,( ()<SPACE>{<++>}<ESC>0f)i
+autocmd Filetype c,javascript,java,markdown inoremap ,<TAB> <ESC>/<++><CR>c4l<ENTER><ESC>O
+
+autocmd Filetype c,javascript,java,markdown inoremap ," ""<ESC>i
+
+" ===
+" === Plugins (managed by vim-plug)
+" === Warning ! command `curl` need to be installed currectly in ubuntu_20.04_focal !
+" ===
+
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/tpope/vim-commentary.git'
+Plug 'https://github.com/dhruvasagar/vim-table-mode.git'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'https://github.com/preservim/nerdtree.git'
+Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
+
+" ===
+" === See: https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly
+" ===
+
+function! s:isAtStartOfLine(mapping)
+  let text_before_cursor = getline('.')[0 : col('.')-1]
+  let mapping_pattern = '\V' . escape(a:mapping, '\')
+  let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+  return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endfunction
+
+inoreabbrev <expr> <bar><bar>
+          \ <SID>isAtStartOfLine('\|\|') ?
+          \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+          \ <SID>isAtStartOfLine('__') ?
+          \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+
+" ===
+" === `Q` in normal mode enters ex mode, you almost never want this
+" ===
+
+nnoremap Q <Nop>
+
+" ===
+" === Split window
+" ===
+
+nnoremap <C-b>- :sp<CR>
+nnoremap <C-b>\| :vsp<CR>
+
+" ===
+" === Refuse to use arrow keys
+" ===
+
+nnoremap <Left>  :echo "Please use h"<CR>
+nnoremap <Right> :echo "Please use l"<CR>
+nnoremap <Up>    :echo "Please use k"<CR>
+nnoremap <Down>  :echo "Please use j"<CR>
+
+" ... and in insert mode
+
+inoremap <Left>  :echo "Please use h"<CR>
+inoremap <Right> :echo "Please use l"<CR>
+inoremap <Up>    :echo "Please use k"<CR>
+inoremap <Down>  :echo "Please use j"<CR>
+
+" ===
+" === Re-map keys of plugins
+" ===
+
+nnoremap <C-p> :MarkdownPreview<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :Files<CR>
+
+map <C-c> gcc
+
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
+
+" ===
+" === find next `<++>`
+" ===
+
+nnoremap <SPACE><SPACE> <Esc>/<++><CR>c4l
+
+" ===
+" === Automatically deletes all trailing whitespace on save
+" ===
+
+autocmd BufWritePre * %s/\s\+$//e
+
+" ===
+" === Save & exit
+" ===
+
+nnoremap <C-s> :w<CR>
+nnoremap <C-q> :q<CR>
+
