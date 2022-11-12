@@ -116,6 +116,15 @@ nnoremap <C-b>- :sp<CR>
 nnoremap <C-b>\| :vsp<CR>
 
 " ===
+" === Navigate between windows
+" ===
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" ===
 " === Refuse to use arrow keys
 " ===
 
