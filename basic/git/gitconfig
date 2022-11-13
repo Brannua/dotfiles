@@ -2,16 +2,16 @@
     name = Brannua
     email = 374453156@qq.com
 
-[core]
-    quotepath = false
-
 [init]
     defaultBranch = master
 
+[core]
+    quotepath = false
+
 [alias]
+    l = log --all --oneline --graph --decorate=full
+    s = status
+    d = diff
     a = add
     c = commit
-    d = diff
-    s = status
-    l = log --all --oneline --graph --decorate=full
 

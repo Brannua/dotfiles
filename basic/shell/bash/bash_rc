@@ -1,3 +1,4 @@
+
 BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 
 [ -f ${BASH_SRC_PATH}/bash_aliases ] && source ${BASH_SRC_PATH}/bash_aliases
@@ -14,3 +15,4 @@ bind -m vi-command "Control-l: clear-screen"
 
 # Enable fzf, see: https://github.com/junegunn/fzf#using-git
 [ -f /home/lpj/.config/fzfrc ] && source /home/lpj/.config/fzfrc
+
