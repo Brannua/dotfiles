@@ -13,5 +13,4 @@ bind -m vi-command "Control-l: clear-screen"
 [[ -s /home/lpj/.autojump/etc/profile.d/autojump.sh ]] && source /home/lpj/.autojump/etc/profile.d/autojump.sh
 
 # Enable fzf, see: https://github.com/junegunn/fzf#using-git
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
+[ -f /home/lpj/.config/fzfrc ] && source /home/lpj/.config/fzfrc
