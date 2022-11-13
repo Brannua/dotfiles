@@ -6,8 +6,9 @@ alias ...="cd ../.."
 
 alias q=exit
 alias c=clear
-alias l="ls -al"
+alias l="ls -l"
 alias ll="ls -al"
+
 alias sl=ls
 
 alias mv="mv -i"
