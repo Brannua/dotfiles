@@ -1,3 +1,7 @@
+# Enable the `VI-MODE` by typing <Esc>
+set -o vi
+bind -m vi-insert "Control-l: clear-screen"
+bind -m vi-command "Control-l: clear-screen"
 
 BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 
@@ -5,14 +9,9 @@ BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 [ -f ${BASH_SRC_PATH}/bash_variables ] && source ${BASH_SRC_PATH}/bash_variables
 [ -f ${BASH_SRC_PATH}/bash_scripts ] && source ${BASH_SRC_PATH}/bash_scripts
 
-# Enable the `VI-MODE` by typing <Esc>
-set -o vi
-bind -m vi-insert "Control-l: clear-screen"
-bind -m vi-command "Control-l: clear-screen"
+# https://github.com/junegunn/fzf#using-git
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Enable autojump, see: https://github.com/wting/autojump#manual
+# https://github.com/wting/autojump#manual
 [[ -s /home/lpj/.autojump/etc/profile.d/autojump.sh ]] && source /home/lpj/.autojump/etc/profile.d/autojump.sh
-
-# Enable fzf, see: https://github.com/junegunn/fzf#using-git
-[ -f /home/lpj/.config/fzfrc ] && source /home/lpj/.config/fzfrc
 
