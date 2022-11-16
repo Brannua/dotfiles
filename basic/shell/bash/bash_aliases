@@ -18,6 +18,7 @@ alias s=screenfetch
 alias open=xdg-open
 #alias ra=ranger
 alias v=vim
+alias f=fish
 
 alias rl="source ~/.bashrc; echo bashrc reloaded."
 
