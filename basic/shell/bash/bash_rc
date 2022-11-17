@@ -17,3 +17,8 @@ BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 # https://github.com/wting/autojump#manual
 [[ -s /home/lpj/.autojump/etc/profile.d/autojump.sh ]] && source /home/lpj/.autojump/etc/profile.d/autojump.sh
 
+# https://github.com/nvm-sh/nvm#installing-and-updating
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
