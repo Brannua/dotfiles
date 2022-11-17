@@ -1,2 +1,4 @@
+#!/usr/bin/env sh
+
 export EDITOR=vim
 export FZF_COMPLETION_TRIGGER='\'

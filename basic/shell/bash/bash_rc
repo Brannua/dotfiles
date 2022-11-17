@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Enable the `VI-MODE` by typing <Esc>
 set -o vi
 bind -m vi-insert "Control-l: clear-screen"
