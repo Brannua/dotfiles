@@ -18,7 +18,7 @@ alias rm="rm -i"
 
 alias s=screenfetch
 alias open=xdg-open
-#alias ra=ranger
+alias ra=ranger
 alias v=vim
 alias f=fish
 
