@@ -21,6 +21,8 @@ alias open=xdg-open
 alias ra=ranger
 alias v=vim
 alias f=fish
+alias cat=bat
+alias tm=tmux
 
 alias rl="source ~/.bashrc; echo bashrc reloaded."
 
