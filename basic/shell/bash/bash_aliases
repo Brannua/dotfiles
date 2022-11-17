@@ -1,15 +1,17 @@
+#!/usr/bin/env sh
 
 alias ghs="sudo cat ${HOME}/Code/access_token.github | xclip -sel clip"
 
 alias ..="cd .."
 alias ...="cd ../.."
 
+alias ls=exa
+alias sl=exa
+
 alias q=exit
 alias c=clear
 alias l="ls -l"
 alias ll="ls -al"
-
-alias sl=ls
 
 alias mv="mv -i"
 alias rm="rm -i"
