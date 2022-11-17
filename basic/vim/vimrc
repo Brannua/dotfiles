@@ -146,7 +146,7 @@ inoremap <Down>  :echo "Please use j"<CR>
 
 nnoremap <C-p> :MarkdownPreview<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :Files<CR>
+nnoremap <C-f> :Files ~<CR>
 
 map <C-c> gcc
 
