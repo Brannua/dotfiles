@@ -7,7 +7,7 @@ let mapleader=" "
 
 syntax on
 
-set nowrap
+set wrap
 set cursorline
 set scrolloff=10
 set number relativenumber
@@ -171,4 +171,5 @@ autocmd BufWritePre * %s/\s\+$//e
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
+nnoremap <C-r> :source $MYVIMRC<CR>
 

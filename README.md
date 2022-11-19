@@ -17,7 +17,7 @@ Write a shell script to automate these settings.
 
 ### About shell
 
-I use bash only now.
+I use bash+fish now.
 
 If you use zsh, configuration shown below may be help you.
 
