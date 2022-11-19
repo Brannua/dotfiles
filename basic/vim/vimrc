@@ -82,6 +82,8 @@ Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+Plug 'https://github.com/tpope/vim-surround.git'
+
 call plug#end()
 
 " ===
