@@ -83,6 +83,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/gcmt/wildfire.vim.git'
 
 call plug#end()
 
@@ -166,6 +167,12 @@ nnoremap <SPACE><SPACE> <Esc>/<++><CR>c4l
 " ===
 
 autocmd BufWritePre * %s/\s\+$//e
+
+" ===
+" === Open terminal
+" ===
+
+nnoremap T :terminal<CR>
 
 " ===
 " === Save & exit
