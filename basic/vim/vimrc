@@ -37,22 +37,22 @@ set softtabstop=4
 " === Snippits
 " ===
 
-autocmd Filetype markdown inoremap ，1 #<SPACE>
-autocmd Filetype markdown inoremap ，2 ##<SPACE>
-autocmd Filetype markdown inoremap ，3 ###<SPACE>
-autocmd Filetype markdown inoremap ，4 ####<SPACE>
-autocmd Filetype markdown inoremap ，5 #####<SPACE>
+autocmd Filetype markdown inoremap ,1 #<SPACE>
+autocmd Filetype markdown inoremap ,2 ##<SPACE>
+autocmd Filetype markdown inoremap ,3 ###<SPACE>
+autocmd Filetype markdown inoremap ,4 ####<SPACE>
+autocmd Filetype markdown inoremap ,5 #####<SPACE>
 
-autocmd Filetype markdown inoremap ，l ---<ENTER>
+autocmd Filetype markdown inoremap ,l ---<ENTER>
 
-autocmd Filetype markdown inoremap ，f <ESC>/<++><CR>c4l
+autocmd Filetype markdown inoremap ,f <ESC>/<++><CR>c4l
 
-autocmd Filetype markdown inoremap ，a [](<++>) <++><ESC>F[a
-autocmd Filetype markdown inoremap ，p ![](<++>) <++><ESC>F[a
+autocmd Filetype markdown inoremap ,a [](<++>) <++><ESC>F[a
+autocmd Filetype markdown inoremap ,p ![](<++>) <++><ESC>F[a
 
-autocmd Filetype markdown inoremap ，b **** <++><ESC>F*hi
-autocmd Filetype markdown inoremap ，s ~~~~ <++><ESC>F~hi
-autocmd Filetype markdown inoremap ，i ** <++><ESC>F*i
+autocmd Filetype markdown inoremap ,b **** <++><ESC>F*hi
+autocmd Filetype markdown inoremap ,s ~~~~ <++><ESC>F~hi
+autocmd Filetype markdown inoremap ,i ** <++><ESC>F*i
 
 autocmd Filetype c,javascript,java,markdown inoremap ,( ()<SPACE>{<++>}<ESC>0f)i
 autocmd Filetype c,javascript,java,markdown inoremap ,<TAB> <ESC>/<++><CR>c4l<ENTER><ESC>O
