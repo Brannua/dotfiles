@@ -173,5 +173,5 @@ autocmd BufWritePre * %s/\s\+$//e
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
-nnoremap <C-r> :source $MYVIMRC<CR>
+nnoremap R :source $MYVIMRC<CR>
 
