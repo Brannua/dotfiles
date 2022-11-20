@@ -19,6 +19,12 @@ set wildmenu
 set incsearch
 
 " ===
+" === https://www.johnhawthorn.com/2012/09/vi-escape-delays/
+" === https://stackoverflow.com/questions/15550100/how-to-exit-visual-mode-without-a-delay-in-vim
+" ===
+set timeoutlen=1000 ttimeoutlen=0
+
+" ===
 " === Disable bell because it's annoying
 " ===
 
@@ -73,6 +79,8 @@ endif
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'vim-airline/vim-airline-themes'
+
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/dhruvasagar/vim-table-mode.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -86,6 +94,8 @@ Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/gcmt/wildfire.vim.git'
 
 call plug#end()
+
+let g:airline_theme='simple'
 
 " ===
 " === See: https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly
