@@ -98,7 +98,7 @@ call plug#end()
 let g:airline_theme='simple'
 
 " ===
-" === See: https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly
+" === https://github.com/dhruvasagar/vim-table-mode#creating-table-on-the-fly
 " ===
 
 function! s:isAtStartOfLine(mapping)
