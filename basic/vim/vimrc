@@ -22,6 +22,9 @@ set incsearch
 set splitbelow
 set splitright
 
+" Enable mouse usage (all modes)
+set mouse=a
+
 " ===
 " === https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 " === https://stackoverflow.com/questions/15550100/how-to-exit-visual-mode-without-a-delay-in-vim
