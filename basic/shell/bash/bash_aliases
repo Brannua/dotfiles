@@ -16,7 +16,7 @@ alias ll="ls -al"
 alias mv="mv -i"
 alias rm="rm -i"
 
-alias s=screenfetch
+alias s=neofetch
 alias open=xdg-open
 alias ra=ranger
 alias v=vim
