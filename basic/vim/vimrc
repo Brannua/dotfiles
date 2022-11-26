@@ -84,6 +84,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/dhruvasagar/vim-table-mode.git'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" https://github.com/preservim/nerdtree/issues/1251
 Plug 'https://github.com/preservim/nerdtree.git'
 Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
 
