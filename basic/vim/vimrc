@@ -38,7 +38,7 @@ set timeoutlen=1000 ttimeoutlen=0
 set noerrorbells visualbell t_vb=
 
 " ===
-" === Config the `Tab`
+" === Configure the `Tab`
 " ===
 
 set tabstop=4
@@ -74,7 +74,7 @@ autocmd Filetype c,javascript,java,markdown inoremap ," ""<ESC>i
 
 " ===
 " === Plugins (managed by vim-plug)
-" === Warning ! command `curl` need to be installed currectly in ubuntu_20.04_focal !
+" === Warning ! command `curl` need to be installed correctly in ubuntu_20.04_focal !
 " ===
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -182,6 +182,12 @@ let NERDTreeShowHidden=1
 " ===
 
 nnoremap <SPACE><SPACE> <Esc>/<++><CR>c4l
+
+" ===
+" === Spell_check set to <F6>
+" ===
+
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
 " ===
 " === Automatically deletes all trailing whitespace on save
