@@ -1,29 +1,33 @@
 #!/usr/bin/env sh
 
-alias ghs="sudo cat ${HOME}/Code/access_token.github | xclip -sel clip"
-
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias ls=exa
-alias sl=exa
-
 alias q=exit
 alias c=clear
-alias l="ls -l"
-alias ll="ls -al"
 
 alias mv="mv -i"
 alias rm="rm -i"
 
-alias s="neofetch | lolcat"
-alias open=xdg-open
-alias ra=ranger
 alias v=vim
 alias f=fish
-alias cat=bat
 alias tm=tmux
-
-alias fy="trans :zh" # pacman -S translate-shell
+alias ra=ranger
+alias open=xdg-open
+alias s="neofetch | lolcat"
 alias rl="source ~/.bashrc; echo bashrc reloaded."
+alias fy="trans :zh" # https://github.com/soimort/translate-shell
+alias ghs="sudo cat ${HOME}/Code/access_token.github | xclip -sel clip"
+
+# replacement of some cli-tools
+alias cat=bat
+alias du=dust   # disk-usage: https://github.com/bootandy/dust
+alias df=duf
+alias grep=rg   # ripgrep: https://github.com/BurntSushi/ripgrep
+alias ps=procs
+
+alias ls=exa
+alias sl=exa
+alias l="ls -l"
+alias ll="ls -al"
 
