@@ -11,9 +11,6 @@ BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 [ -f ${BASH_SRC_PATH}/bash_variables ] && source ${BASH_SRC_PATH}/bash_variables
 [ -f ${BASH_SRC_PATH}/bash_scripts ] && source ${BASH_SRC_PATH}/bash_scripts
 
-# https://github.com/junegunn/fzf#using-git
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # https://github.com/wting/autojump#manual
 [[ -s /home/lpj/.autojump/etc/profile.d/autojump.sh ]] && source /home/lpj/.autojump/etc/profile.d/autojump.sh
 
@@ -21,4 +18,7 @@ BASH_SRC_PATH=${HOME}/Code/config-files/basic/shell/bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# https://github.com/junegunn/fzf#using-git
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash
 
