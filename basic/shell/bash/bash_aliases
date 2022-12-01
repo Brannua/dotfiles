@@ -18,7 +18,7 @@ alias open=xdg-open
 alias s="neofetch | lolcat"
 alias rl="source ~/.bashrc; echo bashrc reloaded."
 alias fy="trans :zh" # https://github.com/soimort/translate-shell
-alias ghs="sudo cat ${HOME}/Code/access_token.github | xclip -sel clip"
+alias ghs="sudo cat ${HOME}/code/access_token.github | xclip -sel clip"
 
 # replacement of some cli-tools
 alias cat=bat
