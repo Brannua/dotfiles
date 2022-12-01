@@ -29,6 +29,5 @@ alias ps=procs
 
 alias ls=exa
 alias sl=exa
-alias l="ls -l"
-alias ll="ls -al"
+alias ll="ls -l"
 
