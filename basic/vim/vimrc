@@ -17,6 +17,7 @@ set smartcase
 
 set wildmenu
 set incsearch
+set nohlsearch
 
 " https://stackoverflow.com/questions/15968880/vim-cursor-position-on-new-split-window
 set splitbelow
@@ -200,6 +201,14 @@ autocmd BufWritePre * %s/\s\+$//e
 " ===
 
 nnoremap T :terminal<CR>
+
+" ===
+" === refers to: https://www.youtube.com/watch?v=bQfFvExpZDU
+" === :help g
+" ===
+
+nnoremap j gj
+nnoremap k gk
 
 " ===
 " === Save & exit
