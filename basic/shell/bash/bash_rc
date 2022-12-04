@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# https://github.com/clvv/fasd
+eval "$(fasd --init auto)"
+
 export BASH_SRC_PATH=${HOME}/code/config-files/basic/shell/bash
 
 [ -f ${BASH_SRC_PATH}/bash_aliases ] && source ${BASH_SRC_PATH}/bash_aliases
@@ -11,14 +14,11 @@ set -o vi
 bind -m vi-insert "Control-l: clear-screen"
 bind -m vi-command "Control-l: clear-screen"
 
-# https://github.com/clvv/fasd
-eval "$(fasd --init auto)"
-
 # https://github.com/nvm-sh/nvm#installing-and-updating
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # https://github.com/junegunn/fzf#using-git
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/fzf/fzf.bash"
 

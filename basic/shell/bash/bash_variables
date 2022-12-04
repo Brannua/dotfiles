@@ -8,5 +8,8 @@ export FZF_COMPLETION_TRIGGER='\'
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+
 export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtkrc-2.0"
+[ -f "${HOME}/.gtkrc-2.0" ] && rm -rf "${HOME}/.gtkrc-2.0" # https://bugs.kde.org/show_bug.cgi?id=417534
 
