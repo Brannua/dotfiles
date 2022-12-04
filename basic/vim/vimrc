@@ -207,8 +207,8 @@ nnoremap T :terminal<CR>
 " === :help g
 " ===
 
-nnoremap j gj
-nnoremap k gk
+nnoremap <S-j> gj
+nnoremap <S-k> gk
 
 " ===
 " === Save & exit
