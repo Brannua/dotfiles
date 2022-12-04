@@ -9,7 +9,8 @@ alias c=clear
 alias mv="mv -i"
 alias rm="rm -i"
 
-alias v=nvim
+alias j="fasd_cd -d"
+
 alias vim=nvim
 alias f=fish
 alias tm=tmux
