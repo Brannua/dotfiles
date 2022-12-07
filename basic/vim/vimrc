@@ -57,7 +57,7 @@ autocmd Filetype markdown inoremap ,3 ###<SPACE>
 autocmd Filetype markdown inoremap ,4 ####<SPACE>
 autocmd Filetype markdown inoremap ,5 #####<SPACE>
 
-autocmd Filetype markdown inoremap ,l ---<ENTER>
+autocmd Filetype markdown inoremap ,l ---<ENTER><ENTER>
 
 autocmd Filetype markdown inoremap ,f <ESC>/<++><CR>c4l
 
