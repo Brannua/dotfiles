@@ -1,6 +1,12 @@
 
 > Please make sure that you can access github.com easily.
 
+### Installation
+
+```bash
+git clone --depth 1 https://github.com/Brannua/dotfiles.git
+```
+
 ### Basic settings
 
 shell + vim + git
