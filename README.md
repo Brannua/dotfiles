@@ -17,10 +17,6 @@ tmux + fzf
 
 ranger（optional）
 
-### Todo
-
-Write a shell script to automate these settings.
-
 ### About shell
 
 I use bash+fish now.
@@ -43,4 +39,8 @@ function fish_user_key_bindings
     end
 end
 ```
+
+### Todo
+
+Write a shell script to automate these settings.
 
