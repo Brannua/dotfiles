@@ -64,14 +64,15 @@ autocmd Filetype markdown inoremap ,f <ESC>/<++><CR>c4l
 autocmd Filetype markdown inoremap ,a [](<++>) <++><ESC>F[a
 autocmd Filetype markdown inoremap ,p ![](<++>) <++><ESC>F[a
 
+autocmd Filetype markdown inoremap ,' '' <++><ESC>F'i
+autocmd Filetype markdown inoremap ," "" <++><ESC>F"i
+
 autocmd Filetype markdown inoremap ,b **** <++><ESC>F*hi
 autocmd Filetype markdown inoremap ,s ~~~~ <++><ESC>F~hi
 autocmd Filetype markdown inoremap ,i ** <++><ESC>F*i
 
-autocmd Filetype c,javascript,java,markdown inoremap ,( ()<SPACE>{<++>}<ESC>0f)i
-autocmd Filetype c,javascript,java,markdown inoremap ,<TAB> <ESC>/<++><CR>c4l<ENTER><ESC>O
-
-autocmd Filetype c,javascript,java,markdown inoremap ," ""<ESC>i
+autocmd Filetype c,markdown inoremap ,( ()<SPACE>{<++>}<ESC>0f)i
+autocmd Filetype c,markdown inoremap ,<TAB> <ESC>/<++><CR>c4l<ENTER><ESC>O
 
 " ===
 " === Plugins (managed by vim-plug)

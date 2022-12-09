@@ -8,6 +8,7 @@ alias c=clear
 
 alias mv="mv -i"
 alias rm="rm -i"
+alias mkdir="mkdir -p"
 
 alias j="fasd_cd -d"
 
@@ -27,6 +28,7 @@ alias du=dust   # disk-usage: https://github.com/bootandy/dust
 alias df=duf
 alias grep=rg   # ripgrep: https://github.com/BurntSushi/ripgrep
 alias ps=procs
+alias msc="msc -p ~/msc"
 
 alias ls=exa
 alias sl=exa
