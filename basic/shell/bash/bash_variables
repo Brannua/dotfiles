@@ -6,8 +6,9 @@ export FZF_COMPLETION_TRIGGER='\'
 # ~/ Clean-up: https://wiki.archlinux.org/title/XDG_Base_Directory
 
 export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_TRASH_HOME="$HOME/.trash"
 
 export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtkrc-2.0"
