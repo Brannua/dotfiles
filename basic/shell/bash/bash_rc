@@ -22,3 +22,10 @@ export NVM_DIR="$HOME/.nvm"
 # https://github.com/junegunn/fzf#using-git
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.bash ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/fzf/fzf.bash"
 
+# Agnoster Theme for Bash: https://github.com/speedenator/agnoster-bash
+export THEME=$BASH_SRC_PATH/themes/agnoster-for-bash/agnoster.bash
+if [[ -f $THEME ]]; then
+    export DEFAULT_USER=`whoami`
+    source $THEME
+fi
+
