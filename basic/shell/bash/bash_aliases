@@ -5,6 +5,7 @@ alias ...="cd ../.."
 
 alias q=exit
 alias c=clear
+alias cls=clear
 
 alias mv="mv -i"
 alias rm="rm -i"
