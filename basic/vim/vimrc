@@ -30,6 +30,7 @@ set mouse=a
 " === https://www.johnhawthorn.com/2012/09/vi-escape-delays/
 " === https://stackoverflow.com/questions/15550100/how-to-exit-visual-mode-without-a-delay-in-vim
 " ===
+
 set timeoutlen=1000 ttimeoutlen=0
 
 " ===
