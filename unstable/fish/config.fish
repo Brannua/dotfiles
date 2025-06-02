@@ -26,3 +26,5 @@ function mcd
 	mkdir -p $argv
 	cd $argv
 end
+
+thefuck --alias | source

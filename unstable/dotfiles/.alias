@@ -3,7 +3,7 @@ alias c=clear
 alias l="ls -alh"
 
 alias f=fish
-alias s=screenfetch
+alias s=fastfetch
 alias fy="trans -s en -t zh"
 
 # proxy
