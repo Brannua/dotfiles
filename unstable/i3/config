@@ -184,5 +184,5 @@ gaps outer 2
 gaps inner 4
 
 # no-border
-for_window [class="konsole"] border none
+# for_window [class="konsole"] border none
 

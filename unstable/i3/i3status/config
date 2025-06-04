@@ -15,7 +15,7 @@ battery all {
 	format = "%status%percentage %remaining"
 	status_chr = "⚡"
 	status_bat = "🔋"
-	status_full = "☻"
+	status_full = "☻ "
 	path = "/sys/class/power_supply/BAT%d/uevent"
 	low_threshold = 15
 }
