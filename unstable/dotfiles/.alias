@@ -20,5 +20,5 @@ alias brightness-decrease="brightnessctl set 10%-"
 alias brightness-increase="brightnessctl set +10%"
 
 # launch webcam
-alias webcam-start="mpv /dev/video2 --vf=hflip &"
+alias webcam-start="mpv /dev/video2 --vf=hflip --profile=low-latency --no-osc &"
 
