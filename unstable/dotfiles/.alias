@@ -10,12 +10,15 @@ alias fy="trans -s en -t zh"
 alias proxy-on="export http_proxy='http://127.0.0.1:1080'; export all_proxy='socks5://127.0.0.1:8080'"
 alias proxy-off="unset http_proxy; unset all_proxy"
 
+# video-downloader
+alias down=yt-dlp
+
 # brightnessctl
 alias brightness-max="brightnessctl set 100%"
 alias brightness-middle="brightnessctl set 50%"
 alias brightness-decrease="brightnessctl set 10%-"
 alias brightness-increase="brightnessctl set +10%"
 
-# video-downloader
-alias down=yt-dlp
+# launch webcam
+alias webcam-start="mpv /dev/video2 --vf=hflip &"
 

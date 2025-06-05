@@ -183,6 +183,8 @@ exec picom --daemon
 gaps outer 2
 gaps inner 4
 
-# no-border
-# for_window [class="konsole"] border none
+# border
+for_window [class="konsole"] border pixel 2
+for_window [class="mpv"] border pixel 2
+for_window [class="vlc"] border pixel 2
 
