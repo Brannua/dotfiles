@@ -1,16 +1,17 @@
-source ~/.zshrc-manjaro
-
 export EDITOR=vim
 export VISUAL=vim
 
 # enable vi_mode
 set -o vi
 
+source ~/.zshrc-manjaro
+source ~/.alias
+
 # embed/integrate fzf into fish
 source <(fzf --zsh)
 
-# alias
-source ~/.alias
+# tldr fuck
+eval $(thefuck --alias)
 
 # shell_wrapper for yazi
 function r() {
