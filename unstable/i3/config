@@ -103,7 +103,7 @@ set $ws1 "1: terminals  "
 set $ws2 "2: browser  "
 set $ws3 "3: music  "
 set $ws4 "4: obs  "
-set $ws5 "5"
+set $ws5 "5: videos "
 set $ws10 "10"
 
 # switch to workspace
@@ -127,6 +127,7 @@ assign [class="konsole"] $ws1
 assign [class="qutebrowser"] $ws2
 assign [class="listen1"] $ws3
 assign [class="obs"] $ws4
+assign [class="mpv"] $ws5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
