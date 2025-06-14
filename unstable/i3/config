@@ -100,7 +100,7 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: terminals  "
-set $ws2 "2: firefox  "
+set $ws2 "2: browser  "
 set $ws3 "3: music  "
 set $ws4 "4: obs  "
 set $ws5 "5"
@@ -124,7 +124,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # launch apps in particular workspace
 assign [class="konsole"] $ws1
-assign [class="firefox"] $ws2
+assign [class="qutebrowser"] $ws2
 assign [class="listen1"] $ws3
 assign [class="obs"] $ws4
 
@@ -169,14 +169,14 @@ bar {
 bindsym	$mod+Shift+x exec i3lock
 
 # set wallpaper using feh
-exec_always feh --bg-fill ~/Pictures/2.jpg
+exec_always feh --bg-fill ~/Pictures/1.jpg
 
 # make <CapsLock> as another <Esc>
 exec_always xmodmap ~/.Xmodmap
 
 # auto-start
 exec konsole
-exec firefox
+exec qutebrowser
 exec ~/.appImages/listen1.AppImage
 exec obs
 
@@ -188,7 +188,8 @@ gaps outer 2
 gaps inner 4
 
 # border
-for_window [class="konsole"] border pixel 2
+for_window [class="konsole"] border pixel 6
 for_window [class="mpv"] border pixel 2
 for_window [class="vlc"] border pixel 2
+for_window [class="qutebrowser"] border pixel 6
 

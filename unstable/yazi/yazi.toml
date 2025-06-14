@@ -1,6 +1,10 @@
 [manager]
 linemode = "permissions"
 
+[preview]
+max_width = 99999999
+max_height= 99999999
+
 [opener]
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" },
