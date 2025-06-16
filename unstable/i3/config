@@ -129,13 +129,6 @@ assign [class="listen1"] $ws3
 assign [class="obs"] $ws4
 assign [class="mpv"] $ws5
 
-# bind $ws to screen
-workspace $ws1 output eDP-1
-workspace $ws2 output DP-1
-workspace $ws3 output DP-1
-workspace $ws4 output eDP-1
-workspace $ws5 output DP-1
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -177,7 +170,7 @@ bar {
 bindsym	$mod+Shift+x exec i3lock
 
 # set wallpaper using feh
-exec_always feh --bg-fill ~/Pictures/1.jpg
+exec_always feh --bg-fill ~/Pictures/2.jpg
 
 # make <CapsLock> as another <Esc>
 exec_always xmodmap ~/.Xmodmap
@@ -187,9 +180,13 @@ exec konsole
 exec qutebrowser
 exec ~/.appImages/listen1.AppImage
 exec obs
+exec ibus-daemon -rxd
 
 # transparency
 exec picom --daemon
+
+# screen_position
+exec xrandr --output DP-1 --pos 0x0 --output eDP-1 --pos 960x2160
 
 # gaps
 gaps outer 2
@@ -197,7 +194,14 @@ gaps inner 4
 
 # border
 for_window [class="konsole"] border pixel 6
-for_window [class="mpv"] border pixel 2
-for_window [class="vlc"] border pixel 2
+for_window [class="mpv"] border pixel 6
+for_window [class="vlc"] border pixel 6
 for_window [class="qutebrowser"] border pixel 6
+
+# bind $ws to screen
+# workspace $ws1 output eDP-1
+# workspace $ws4 output eDP-1
+# workspace $ws2 output DP-1
+# workspace $ws3 output DP-1
+# workspace $ws5 output DP-1
 
