@@ -9,7 +9,8 @@ c.content.proxy = "http://127.0.0.1:1080"
 c.auto_save.session = True
 
 # dark mode
-c.colors.webpage.darkmode.enabled = False
+# c.colors.webpage.darkmode.enabled = False
+c.colors.webpage.darkmode.enabled = True
 
 # c.url.searchengines = {
 # if you use duckduckgo, you can make use of its built in bangs,

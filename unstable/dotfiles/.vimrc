@@ -21,6 +21,11 @@ call plug#end()
 
 " ------------
 
+" rely on 'thaerkh/vim-workspace' plugin
+let g:workspace_autosave_always = 1
+
+" ------------
+
 syntax on
 
 set scrolloff=10
@@ -37,8 +42,5 @@ set smartcase
 set mouse=a
 
 set laststatus=2
-set statusline=%F
-
-" rely on 'thaerkh/vim-workspace' plugin
-let g:workspace_autosave_always = 1
+set statusline=%F\ %m
 

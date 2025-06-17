@@ -198,10 +198,14 @@ for_window [class="mpv"] border pixel 6
 for_window [class="vlc"] border pixel 6
 for_window [class="qutebrowser"] border pixel 6
 
-# bind $ws to screen
-# workspace $ws1 output eDP-1
-# workspace $ws4 output eDP-1
-# workspace $ws2 output DP-1
-# workspace $ws3 output DP-1
-# workspace $ws5 output DP-1
+# $ws1 terminals 
+# $ws2 browser 
+# $ws3 music 
+# $ws4 obs 
+# $ws5 videos 
+workspace $ws1 output eDP-1
+workspace $ws2 output DP-1
+workspace $ws3 output eDP-1
+workspace $ws4 output eDP-1
+workspace $ws5 output DP-1
 
