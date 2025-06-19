@@ -4,15 +4,10 @@ alias l="ls -alh"
 
 alias f=fish
 alias s=fastfetch
-alias fy="trans -s en -t zh"
+alias fy=trans
+alias down=yt-dlp
 
 # proxy
 alias proxy-on="export http_proxy='http://127.0.0.1:1080'; export all_proxy='socks5://127.0.0.1:8080'"
 alias proxy-off="unset http_proxy; unset all_proxy"
-
-# video-downloader
-alias down=yt-dlp
-
-# launch webcam
-alias webcam-start="mpv /dev/video2 --vf=hflip --profile=low-latency --no-osc &"
 

@@ -11,6 +11,9 @@ fzf --fish | source
 # alias
 source ~/.alias
 
+# tldr fuck
+thefuck --alias | source
+
 # shell_wrapper for fish
 function r
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
@@ -27,4 +30,3 @@ function mcd
 	cd $argv
 end
 
-thefuck --alias | source

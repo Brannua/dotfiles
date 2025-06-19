@@ -1,11 +1,12 @@
 
-# Not to load settings configured via the GUI)
+# Not to load settings configured via the GUI
 config.load_autoconfig(False)
 
 # proxy
 c.content.proxy = "http://127.0.0.1:1080"
 
 # save tabs on quit/restart
+# c.auto_save.session = False
 c.auto_save.session = True
 
 # dark mode
