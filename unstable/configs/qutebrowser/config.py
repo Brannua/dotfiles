@@ -6,8 +6,8 @@ config.load_autoconfig(False)
 c.content.proxy = "http://127.0.0.1:1080"
 
 # save tabs on quit/restart
-# c.auto_save.session = False
-c.auto_save.session = True
+c.auto_save.session = False
+# c.auto_save.session = True
 
 # dark mode
 # c.colors.webpage.darkmode.enabled = False

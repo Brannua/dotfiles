@@ -15,14 +15,8 @@ call plug#begin()
 
 " List your plugins here
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'thaerkh/vim-workspace'
 
 call plug#end()
-
-" ------------
-
-" rely on 'thaerkh/vim-workspace' plugin
-let g:workspace_autosave_always = 1
 
 " ------------
 
