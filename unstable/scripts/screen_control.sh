@@ -1,9 +1,13 @@
 #!/bin/bash
 if [ "$1" == "off" ]; then
-	xset s off -dpms
-	echo "屏幕自动关闭已禁用"
+	xset s off
+	xset dpms 0 0 0
+	xset -dpms
 else
-	xset s on +dpms
-	echo "屏幕自动关闭已启用"
+	xset s on
+	xset dpms 600 600 600
+	xset +dpms
 fi
+
+xset q | grep "DPMS" -A 1
 

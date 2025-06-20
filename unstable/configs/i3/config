@@ -192,7 +192,7 @@ exec konsole
 exec qutebrowser
 exec ~/.appImages/listen1.AppImage
 exec obs
-exec ibus-daemon -rxd
+exec fcitx5 -d
 
 # transparency
 exec picom --daemon
