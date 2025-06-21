@@ -41,13 +41,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 
-# start a terminal
+# start terminal
 bindsym $mod+Return exec konsole
 
 exec konsole
 exec qutebrowser
-exec picom --daemon
 exec fcitx5 -d
+exec picom --daemon
 exec xrandr --output DP-1 --pos 0x0 --output eDP-1 --pos 960x2160
 
 # wallpaper

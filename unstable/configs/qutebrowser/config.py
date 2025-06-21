@@ -6,7 +6,7 @@ config.load_autoconfig(False)
 c.content.proxy = "http://127.0.0.1:1080"
 
 # dark mode
-c.colors.webpage.darkmode.enabled = False
+c.colors.webpage.darkmode.enabled = True
 
 # key-binding changes
 c.tabs.show = "multiple"

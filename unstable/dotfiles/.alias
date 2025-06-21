@@ -11,3 +11,7 @@ alias down=yt-dlp
 alias proxy-on="export http_proxy='http://127.0.0.1:1080'; export all_proxy='socks5://127.0.0.1:8080'"
 alias proxy-off="unset http_proxy; unset all_proxy"
 
+# scripts
+alias screen-saver-on="~/Documents/dotfiles/unstable/scripts/screen_control.sh on"
+alias screen-saver-off="~/Documents/dotfiles/unstable/scripts/screen_control.sh off"
+
