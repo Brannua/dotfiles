@@ -16,4 +16,5 @@ config.bind('tH', 'config-cycle tabs.show multiple never')
 config.bind('tT', 'config-cycle tabs.position top left')
 config.bind('sH', 'config-cycle statusbar.show always in-mode')
 config.bind('h', 'history')
+config.bind('Ch', 'history-clear')
 

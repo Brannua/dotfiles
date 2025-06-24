@@ -51,7 +51,7 @@ exec picom --daemon
 exec xrandr --output DP-1 --pos 0x0 --output eDP-1 --pos 960x2160
 
 # wallpaper
-exec_always feh --bg-fill ~/Pictures/2.jpg
+exec_always xwallpaper --zoom ~/Pictures/2.jpg
 
 # make <CapsLock> as another <Esc>
 exec_always xmodmap ~/.Xmodmap
