@@ -1,4 +1,5 @@
 // Copy from /etc/xdg/waybar/
+// Then edited.
 
 {
 	"layer": "top", // Waybar at top layer
@@ -14,7 +15,7 @@
 			// "custom/media"
 		],
 		// "modules-center": [
-		//     "sway/window"
+		// 	"sway/window"
 		// ],
 		"modules-right": [
 			"idle_inhibitor",
@@ -25,13 +26,13 @@
 			// "sway/language",
 			// "mpd",
 			// "power-profiles-daemon",
+			"network",
 			"pulseaudio",
 			"cpu",
 			"memory",
 			"temperature",
 			"backlight",
 			"tray",
-			"network",
 			"clock"
 		],
 
