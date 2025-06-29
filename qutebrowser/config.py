@@ -1,4 +1,3 @@
-
 # Not to load settings configured via the GUI
 config.load_autoconfig(False)
 

@@ -3,8 +3,6 @@ on   = "<Enter>"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
-# -------------------------------------------------------
-
 [[mgr.prepend_keymap]]
 on = [ "1" ]
 run = "plugin relative-motions 1"
@@ -49,6 +47,4 @@ desc = "Move in relative steps"
 on = [ "9" ]
 run = "plugin relative-motions 9"
 desc = "Move in relative steps"
-
-# -------------------------------------------------------
 

@@ -1,5 +1,5 @@
 #
-# wrapper.bash
+# wrapper.bash.zsh
 #
 
 function r() {
