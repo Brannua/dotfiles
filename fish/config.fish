@@ -4,8 +4,8 @@
 
 fish_vi_key_bindings
 
-if test -f ~/.config/bash/rc.alias.fish
-  source ~/.config/bash/rc.alias.fish
+if test -f ~/.config/bash/alias.sh
+  source ~/.config/bash/alias.sh
 end
 
 if test -f ~/.config/fzf/config.fish

@@ -4,6 +4,7 @@
 
 alias q=exit
 alias c=clear
+
 alias f=fish
 alias s=fastfetch
 

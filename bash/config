@@ -1,5 +1,5 @@
 #
-# rc.bash
+# Configuration file for bash.
 #
 
 # If not running interactively, don't do anything
@@ -12,14 +12,17 @@ export VISUAL=vim
 
 set -o vi
 
-if [ -f ~/.config/bash/rc.alias.bash ]; then
-  source ~/.config/bash/rc.alias.bash
+# Aliases.
+if [ -f ~/.config/bash/alias.sh ]; then
+  source ~/.config/bash/alias.sh
 fi
 
+# Fzf.
 if [ -f ~/.config/fzf/config.bash ]; then
   source ~/.config/fzf/config.bash
 fi
 
+# Wrapper for yazi.
 if [ -f ~/.config/yazi/functions/wrapper.bash.zsh ]; then
   source ~/.config/yazi/functions/wrapper.bash.zsh
 fi
