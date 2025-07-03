@@ -1,0 +1,26 @@
+#
+# Configuration file for bash.
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+PS1='[\u@\h \W]\$ '
+
+export EDITOR=vim
+export VISUAL=vim
+
+set -o vi
+
+if [ -f ~/.config/bash/alias.sh ]; then
+  source ~/.config/bash/alias.sh
+fi
+
+if [ -f ~/.config/yazi/functions/wrapper.bash.zsh ]; then
+	source ~/.config/yazi/functions/wrapper.bash.zsh
+fi
+
+if [ -f ~/.config/fzf/config.bash ]; then
+  source ~/.config/fzf/config.bash
+fi
+

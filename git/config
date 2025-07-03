@@ -1,0 +1,20 @@
+[user]
+	name = lpj
+	email = 374453156@qq.com
+
+[init]
+	defaultBranch = main
+
+[alias]
+	s = status
+	d = diff
+	a = add
+	c = commit
+	p = push
+
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RF
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
+

@@ -1,0 +1,20 @@
+[mgr]
+linemode = "permissions"
+
+[preview]
+max_width = 99999999
+max_height= 99999999
+
+[tasks]
+image_bound=[15000,15000]
+
+[opener]
+play = [
+	{ run = 'vlc "$@"', orphan = true, for = "unix" },
+]
+
+[open]
+append_rules = [
+	{ mime = "video/*", use = "play" },
+]
+
