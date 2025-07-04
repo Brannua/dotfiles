@@ -5,7 +5,7 @@ config.load_autoconfig(False)
 c.content.proxy = "socks5://127.0.0.1:1080"
 
 # dark mode
-c.colors.webpage.darkmode.enabled = False
+c.colors.webpage.darkmode.enabled = True
 
 # tabs
 c.tabs.show = "multiple"
