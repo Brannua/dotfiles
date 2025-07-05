@@ -12,6 +12,8 @@ export VISUAL=vim
 
 set -o vi
 
+bind '"\C-l": clear-screen'
+
 if [ -f ~/.config/bash/alias.sh ]; then
   source ~/.config/bash/alias.sh
 fi
