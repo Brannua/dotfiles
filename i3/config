@@ -76,6 +76,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# suspend
+bindsym $mod+Shift+x exec --no-startup-id "i3-nagbar -t warning -m '确认休眠？' -b '确定' 'pkill i3-nagbar; systemctl suspend'"
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
