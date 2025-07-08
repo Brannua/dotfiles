@@ -28,6 +28,15 @@ exec --no-startup-id fcitx5 -d
 # Wallpaper
 exec --no-startup-id variety
 
+# flameshot
+exec --no-startup-id flameshot
+
+# alacritty
+exec --no-startup-id alacritty
+
+# qutebrowser
+exec --no-startup-id qutebrowser
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -131,7 +140,10 @@ set $ws9 "9"
 set $ws10 "10"
 
 # launch particular programs in particular workspace
+assign [class="alacritty"] $ws1
 assign [class="qutebrowser"] $ws2
+assign [class="vlc"] $ws3
+assign [class="obs"] $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
