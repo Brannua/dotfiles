@@ -212,5 +212,5 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 gaps inner 5
 
 # Set window border width
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 3
 
