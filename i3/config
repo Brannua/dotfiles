@@ -141,8 +141,8 @@ set $ws10 "10"
 
 # launch particular programs in particular workspace
 assign [class="alacritty"] $ws1
-assign [class="qutebrowser"] $ws2
-assign [class="vlc"] $ws3
+# assign [class="qutebrowser"] $ws2
+# assign [class="vlc"] $ws3
 assign [class="obs"] $ws4
 
 # switch to workspace
