@@ -25,6 +25,9 @@ exec --no-startup-id "setxkbmap -option caps:escape"
 # Fcitx5
 exec --no-startup-id fcitx5 -d
 
+# Picom
+exec --no-startup-id picom
+
 # Wallpaper
 exec --no-startup-id variety
 
@@ -35,7 +38,7 @@ exec --no-startup-id flameshot
 exec --no-startup-id alacritty
 
 # qutebrowser
-exec --no-startup-id qutebrowser
+# exec --no-startup-id qutebrowser
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -204,4 +207,10 @@ bindsym $mod+r mode "resize"
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Set gaps between windows
+gaps inner 5
+
+# Set window border width
+for_window [class=".*"] border pixel 2
 
