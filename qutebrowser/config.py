@@ -1,3 +1,5 @@
+config.load_autoconfig()
+
 # proxy
 c.content.proxy = "socks5://127.0.0.1:1080"
 

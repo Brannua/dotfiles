@@ -23,6 +23,10 @@ call plug#end()
 
 syntax on
 
+set cursorline
+highlight CursorLine cterm=NONE ctermbg=235
+highlight CursorLineNr cterm=NONE ctermbg=235
+
 set scrolloff=10
 
 set number
