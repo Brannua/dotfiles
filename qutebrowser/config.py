@@ -1,6 +1,3 @@
-# not to load settings configured via the GUI
-config.load_autoconfig(False)
-
 # proxy
 c.content.proxy = "socks5://127.0.0.1:1080"
 
