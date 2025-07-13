@@ -133,7 +133,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Terminal"
 set $ws2 "2: Browser"
-set $ws3 "3"
+set $ws3 "3: OBS"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -145,8 +145,7 @@ set $ws10 "10"
 # launch particular programs in particular workspace
 assign [class="alacritty"] $ws1
 # assign [class="qutebrowser"] $ws2
-# assign [class="vlc"] $ws3
-assign [class="obs"] $ws4
+assign [class="obs"] $ws3
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
