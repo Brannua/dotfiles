@@ -5,6 +5,7 @@
 alias q=exit
 alias c=clear
 
+alias ls=eza
 alias l="ls -alh"
 
 alias f=fish
