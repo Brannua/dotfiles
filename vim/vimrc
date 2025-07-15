@@ -43,6 +43,11 @@ set statusline=%F\ %m
 
 set wildmenu
 
+set ignorecase
+set smartcase
+set hlsearch
+exec "nohlsearch"
+
 nnoremap S :w<CR>
 nnoremap s <nop>
 nnoremap Q :q<CR>
