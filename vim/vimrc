@@ -17,6 +17,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin("~/.vim/plugged")
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'gcmt/wildfire.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 syntax on
