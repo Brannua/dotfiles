@@ -41,3 +41,8 @@ set smartcase
 set laststatus=2
 set statusline=%F\ %m
 
+nnoremap S :w<CR>
+nnoremap s <nop>
+nnoremap Q :q<CR>
+nnoremap R :source $MYVIMRC<CR>
+
