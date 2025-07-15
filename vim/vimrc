@@ -41,6 +41,8 @@ set smartcase
 set laststatus=2
 set statusline=%F\ %m
 
+set wildmenu
+
 nnoremap S :w<CR>
 nnoremap s <nop>
 nnoremap Q :q<CR>
