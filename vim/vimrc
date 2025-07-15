@@ -19,13 +19,15 @@ call plug#begin("~/.vim/plugged")
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-surround'
+Plug 'connorholyday/vim-snazzy'
 call plug#end()
 
 syntax on
 
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=235
-highlight CursorLineNr cterm=NONE ctermbg=235
+color snazzy
+" highlight CursorLine cterm=NONE ctermbg=235
+" highlight CursorLineNr cterm=NONE ctermbg=235
 
 set scrolloff=10
 
