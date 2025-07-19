@@ -23,6 +23,7 @@ Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-surround'
 
 Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'connorholyday/vim-snazzy'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
