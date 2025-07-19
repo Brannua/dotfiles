@@ -2,7 +2,6 @@
 " vimrc
 "
 
-let mapleader = " "
 let g:SnazzyTransparent = 1
 
 " Install vim-plug if not found
@@ -53,10 +52,11 @@ set smartcase
 set hlsearch
 exec "nohlsearch"
 
+set updatetime=100 " Default value is 4000ms.
+
 nnoremap s <nop>
 nnoremap S :w<CR>
 nnoremap Q :q<CR>
 nnoremap R :source $MYVIMRC<CR>
-nnoremap <LEADER>ev :e $MYVIMRC<CR>
-nnoremap <LEADER>sv :source $MYVIMRC<CR>
+nnoremap E :edit $MYVIMRC<CR>
 
