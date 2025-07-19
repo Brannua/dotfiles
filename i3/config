@@ -207,9 +207,3 @@ bindsym $mod+r mode "resize"
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Set gaps between windows
-gaps inner 5
-
-# Set window border width
-for_window [class=".*"] border pixel 3
-

@@ -21,15 +21,20 @@ call plug#begin("~/.vim/plugged")
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-surround'
+
+Plug 'vim-airline/vim-airline'
+
 Plug 'connorholyday/vim-snazzy'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 syntax on
+colorscheme snazzy
+"colorscheme catppuccin-macchiato
 
 set cursorline
-color snazzy
-" highlight CursorLine cterm=NONE ctermbg=235
-" highlight CursorLineNr cterm=NONE ctermbg=235
+highlight CursorLine cterm=NONE
+highlight CursorLineNr cterm=NONE
 
 set scrolloff=10
 
@@ -42,9 +47,6 @@ set shiftwidth=2
 set incsearch
 set smartcase
 
-set laststatus=2
-set statusline=%F\ %m
-
 set wildmenu
 
 set ignorecase
@@ -54,6 +56,7 @@ exec "nohlsearch"
 
 nnoremap s <nop>
 nnoremap S :w<CR>
+nnoremap Q :q<CR>
 nnoremap R :source $MYVIMRC<CR>
 nnoremap <LEADER>ev :e $MYVIMRC<CR>
 nnoremap <LEADER>sv :source $MYVIMRC<CR>
