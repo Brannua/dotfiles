@@ -3,6 +3,7 @@
 "
 
 let mapleader = " "
+let g:SnazzyTransparent = 1
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -23,12 +24,12 @@ Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-surround'
 
 Plug 'vim-airline/vim-airline'
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'connorholyday/vim-snazzy'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 syntax on
-colorscheme catppuccin-macchiato
+colorscheme snazzy
 
 set cursorline
 highlight CursorLine cterm=NONE
