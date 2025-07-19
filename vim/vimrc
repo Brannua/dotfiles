@@ -2,6 +2,8 @@
 " vimrc
 "
 
+let mapleader = " "
+
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -50,8 +52,9 @@ set smartcase
 set hlsearch
 exec "nohlsearch"
 
-nnoremap S :w<CR>
 nnoremap s <nop>
-nnoremap Q :q<CR>
+nnoremap S :w<CR>
 nnoremap R :source $MYVIMRC<CR>
+nnoremap <LEADER>ev :e $MYVIMRC<CR>
+nnoremap <LEADER>sv :source $MYVIMRC<CR>
 
