@@ -208,5 +208,5 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 for_window [class=".*"] border pixel 6
-gaps inner 10
+gaps inner 18
 
