@@ -1,5 +1,5 @@
 #
-# alias for (bash,zsh,fish,...)
+# alias for shell(bash,fish,...)
 # Some useful tools: trans, yt-dlp
 #
 
