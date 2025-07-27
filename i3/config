@@ -31,9 +31,6 @@ exec --no-startup-id picom
 # Wallpaper
 exec --no-startup-id variety
 
-# flameshot
-exec --no-startup-id flameshot
-
 # alacritty
 exec --no-startup-id alacritty
 
@@ -90,6 +87,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 
 # suspend
 bindsym $mod+Shift+x exec --no-startup-id "i3-nagbar -t warning -m '确认休眠？' -b '确定' 'pkill i3-nagbar; systemctl suspend'"
+
+# exec --no-startup-id flameshot
+bindsym $mod+Shift+s exec flameshot gui
 
 # change focus
 bindsym $mod+h focus left
