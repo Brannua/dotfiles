@@ -35,6 +35,8 @@ c.fonts.web.size.default = 18 # web
 # === keybindings
 # ===
 
+config.bind('cs', 'config-source')
+
 # privacy mode
 config.bind('gp', 'open -p')
 
