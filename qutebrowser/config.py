@@ -16,6 +16,7 @@ c.url.start_pages = "file:///dev/null"  # start page
 c.url.default_page = "file:///dev/null" # new_tab page
 
 c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = 'never'
 
 c.content.fullscreen.window = True
 
