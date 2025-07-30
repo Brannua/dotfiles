@@ -45,15 +45,12 @@ set tabstop=2
 set shiftwidth=2
 
 set incsearch
-set smartcase
-
-set wildmenu
-
 set ignorecase
 set smartcase
 set hlsearch
 exec "nohlsearch"
 
+set wildmenu
 set updatetime=100 " Default value is 4000ms.
 
 nnoremap s <nop>
