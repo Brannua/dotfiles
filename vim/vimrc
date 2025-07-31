@@ -4,6 +4,7 @@
 
 let mapleader = ","
 let g:SnazzyTransparent = 1
+let g:auto_save = 1
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -27,6 +28,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
 Plug 'airblade/vim-gitgutter'
+Plug '907th/vim-auto-save'
 call plug#end()
 
 syntax on
@@ -52,6 +54,8 @@ exec "nohlsearch"
 
 set wildmenu
 set updatetime=100 " Default value is 4000ms.
+
+set mouse=a
 
 nnoremap s <nop>
 nnoremap S :w<CR>
