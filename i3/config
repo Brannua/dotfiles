@@ -88,8 +88,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run -fn "Monospace-20"
 # suspend
 bindsym $mod+Shift+x exec --no-startup-id "i3-nagbar -t warning -m '确认休眠？' -b '确定' 'pkill i3-nagbar; systemctl suspend'"
 
-# exec --no-startup-id flameshot
-bindsym $mod+Shift+s exec flameshot gui
+# Use flameshot instead of i3-scrot.
+bindsym Print exec --no-startup-id flameshot gui
+bindsym $mod+Print exec --no-startup-id flameshot screen
 
 # change focus
 bindsym $mod+h focus left
