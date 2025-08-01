@@ -7,7 +7,7 @@ config.load_autoconfig(False)
 # ===
 
 # proxy
-# c.content.proxy = "PROXY"
+c.content.proxy = "socks5://127.0.0.1:1080"
 
 c.url.start_pages = "file:///dev/null"  # start page
 c.url.default_page = "file:///dev/null" # new_tab page
