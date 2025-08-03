@@ -1,0 +1,10 @@
+// Generate a default configuration file:
+// rofi -dump-config > ~/.config/rofi/config.rasi
+
+configuration {
+	font: "mono 30";
+}
+
+// /usr/share/rofi/themes/
+@theme "Arc-Dark"
+
