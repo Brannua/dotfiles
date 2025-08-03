@@ -21,20 +21,12 @@ font pango:monospace 16
 
 # Make CapsLock as another Esc.
 exec --no-startup-id "setxkbmap -option caps:escape"
-
-# Fcitx5
 exec --no-startup-id fcitx5 -d
-
-# Picom
 exec --no-startup-id picom
 
 # Wallpaper
 exec --no-startup-id variety
-
-# alacritty
-exec --no-startup-id alacritty
-
-# qutebrowser
+# exec --no-startup-id alacritty
 # exec --no-startup-id qutebrowser
 
 # Start XDG autostart .desktop files using dex. See also
@@ -70,8 +62,7 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-# start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
+# launch terminal( default is i3-sensible-terminal )
 bindsym $mod+Return exec alacritty
 
 # kill focused window
@@ -81,9 +72,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "Monospace-20"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # suspend
 bindsym $mod+Shift+x exec --no-startup-id "i3-nagbar -t warning -m '确认休眠？' -b '确定' 'pkill i3-nagbar; systemctl suspend'"
@@ -114,8 +102,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
+bindsym $mod+s layout stacking
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -125,10 +113,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -145,8 +133,6 @@ set $ws10 "10"
 
 # launch particular programs in particular workspace
 # assign [class="alacritty"] $ws1
-# assign [class="qutebrowser"] $ws2
-# assign [class="obs"] $ws3
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -173,9 +159,11 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+# bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
@@ -192,18 +180,12 @@ mode "resize" {
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+        # back to normal: Escape or $mod+r
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
-
-# # Start i3bar to display a workspace bar (plus the system information i3status
-# # finds out, if available)
-# bar {
-#         status_command i3status
-# }
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh

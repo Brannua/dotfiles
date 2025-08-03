@@ -8,5 +8,3 @@ config_version: 2
 settings:
   colors.webpage.darkmode.enabled:
     global: true
-  content.proxy:
-    global: socks5://127.0.0.1:1080
