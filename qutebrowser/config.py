@@ -30,13 +30,15 @@ c.content.fullscreen.window = True
 # ===
 
 # proxy
+c.content.proxy = "socks5://127.0.0.1:1080"
 config.bind('ep', 'set content.proxy socks5://127.0.0.1:1080')
-config.bind('Dp', 'set content.proxy none')
+config.bind('sp', 'set content.proxy none')
 
 # dark mode
-c.colors.webpage.darkmode.policy.images = 'never'
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = "never"
 config.bind('ed', 'set colors.webpage.darkmode.enabled True')
-config.bind('Dd', 'set colors.webpage.darkmode.enabled False')
+config.bind('sd', 'set colors.webpage.darkmode.enabled False')
 
 # privacy mode
 config.bind('gp', 'open -p')
