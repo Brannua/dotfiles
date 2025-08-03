@@ -5,7 +5,7 @@
 let mapleader = ","
 let g:auto_save = 1
 let g:SnazzyTransparent = 1
-let g:lightline = { 'colorscheme': 'one' }
+let g:lightline = { 'colorscheme': 'wombat' }
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
