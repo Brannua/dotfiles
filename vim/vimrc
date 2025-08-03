@@ -3,8 +3,9 @@
 "
 
 let mapleader = ","
-let g:SnazzyTransparent = 1
 let g:auto_save = 1
+let g:SnazzyTransparent = 1
+let g:lightline = { 'colorscheme': 'one' }
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -25,7 +26,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-surround'
 
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'connorholyday/vim-snazzy'
 Plug 'airblade/vim-gitgutter'
 Plug '907th/vim-auto-save'
@@ -53,9 +54,13 @@ set hlsearch
 exec "nohlsearch"
 
 set wildmenu
-set updatetime=100 " Default value is 4000ms.
+set updatetime=0 " default is 4000ms.
 
 set mouse=a
+
+set laststatus=2
+set noshowmode
+set ttimeoutlen=0 " when press esc, back to normal-mode right away.
 
 nnoremap s <nop>
 nnoremap S :w<CR>
