@@ -4,6 +4,7 @@
 
 let mapleader = ","
 let g:auto_save = 1
+let g:table_mode_corner='|'
 let g:SnazzyTransparent = 1
 let g:lightline = { 'colorscheme': 'wombat' }
 
@@ -34,15 +35,14 @@ call plug#end()
 
 syntax on
 colorscheme snazzy
-
 set cursorline
-highlight CursorLine cterm=NONE
-highlight CursorLineNr cterm=NONE
-
-set scrolloff=10
+"highlight CursorLine cterm=NONE
+"highlight CursorLineNr cterm=NONE
 
 set number
 set relativenumber
+
+set scrolloff=10
 
 set tabstop=2
 set shiftwidth=2
