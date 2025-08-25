@@ -6,11 +6,10 @@
 		}
 	},
   "modules": [
-    "title",
-    "separator",
     "os",
     "host",
     "kernel",
+		"wm",
     "uptime",
     "packages",
     "shell",

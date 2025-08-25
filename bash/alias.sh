@@ -10,6 +10,8 @@ alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 
+alias grep="grep --ignore-case"
+
 alias g=git
 alias gs="git status"
 alias ga="git add"
