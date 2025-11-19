@@ -5,6 +5,7 @@
 
 alias q=exit
 alias c=clear
+alias open=xdg-open
 
 alias rm="rm -i"
 alias mv="mv -i"
