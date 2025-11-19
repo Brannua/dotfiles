@@ -3,6 +3,8 @@
 # Some useful tools: trans, yt-dlp
 #
 
+alias ..="cd .."
+
 alias q=exit
 alias c=clear
 alias open=xdg-open
