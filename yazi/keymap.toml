@@ -48,3 +48,13 @@ on = [ "9" ]
 run = "plugin relative-motions 9"
 desc = "Move in relative steps"
 
+[[mgr.prepend_keymap]]
+on   = [ "g", "c" ]
+run  = "cd ~/Github/dotfiles"
+desc = "Go dotfiles/"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "d" ]
+run  = "cd ~/Documents"
+desc = "Go Documents/"
+
