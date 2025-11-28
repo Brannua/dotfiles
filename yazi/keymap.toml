@@ -63,3 +63,8 @@ on   = [ "g", "v" ]
 run  = "cd ~/Videos"
 desc = "Go Videos/"
 
+[[mgr.prepend_keymap]]
+on   = [ "g", "m" ]
+run  = "cd ~/Music"
+desc = "Go Music/"
+
