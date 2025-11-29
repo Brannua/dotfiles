@@ -19,7 +19,7 @@ c.tabs.position = "top"
 # statusbar
 c.statusbar.show = "always"
 
-c.zoom.default = 150
+c.zoom.default = 125
 c.fonts.default_size = "20px" # title & bar
 c.fonts.web.size.default = 18 # web
 
