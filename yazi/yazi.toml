@@ -10,7 +10,7 @@ image_bound=[15000,15000]
 
 [opener]
 play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	{ run = 'vlc "$@"', orphan = true, for = "unix" },
 ]
 
 # edit = [

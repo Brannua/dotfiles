@@ -50,21 +50,26 @@ desc = "Move in relative steps"
 
 [[mgr.prepend_keymap]]
 on   = [ "g", "c" ]
-run  = "cd ~/Github/dotfiles"
+run  = "cd ~/Github/dotfiles/"
 desc = "Go dotfiles/"
 
 [[mgr.prepend_keymap]]
+on   = [ "g", "C" ]
+run  = "cd ~/.config/"
+desc = "Go .config/"
+
+[[mgr.prepend_keymap]]
 on   = [ "g", "d" ]
-run  = "cd ~/Documents"
+run  = "cd ~/Documents/"
 desc = "Go Documents/"
 
 [[mgr.prepend_keymap]]
 on   = [ "g", "v" ]
-run  = "cd ~/Videos"
+run  = "cd ~/Videos/"
 desc = "Go Videos/"
 
 [[mgr.prepend_keymap]]
 on   = [ "g", "m" ]
-run  = "cd ~/Music"
+run  = "cd ~/Music/"
 desc = "Go Music/"
 
