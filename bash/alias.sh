@@ -35,3 +35,5 @@ alias proxy-off="unset all_proxy"
 alias extMoni="xrandr --output DP-1 --auto --primary --output eDP-1 --off"
 alias intMoni="xrandr --output eDP-1 --auto --primary --output DP-1 --off"
 
+alias pk=pkill
+
