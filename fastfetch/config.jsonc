@@ -3,27 +3,17 @@
 		"color": {
 			"1": "blue",
 			"2": "green"
-		}
+		},
+		"type": "small"
 	},
   "modules": [
     "os",
-    "host",
     "kernel",
 		"wm",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
     "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "locale",
-    "break",
-    "colors"
+    "shell",
+    "packages",
+    "uptime"
   ]
 }
 
