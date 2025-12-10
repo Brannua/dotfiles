@@ -1,2 +1,2 @@
 fzf --fish | source
-source "$HOME/.config/fzf/VAR"
+source "$HOME/.config/fzf/VAR.sh"
