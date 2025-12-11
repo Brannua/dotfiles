@@ -5,7 +5,6 @@
 let mapleader = ","
 let g:auto_save = 1
 let g:table_mode_corner='|'
-let g:SnazzyTransparent = 1
 let g:lightline = { 'colorscheme': 'wombat' }
 
 " Install vim-plug if not found
@@ -22,22 +21,30 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin("~/.vim/plugged")
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'gcmt/wildfire.vim'
-Plug 'tpope/vim-surround'
-
+" https://github.com/itchyny/lightline.vim
 Plug 'itchyny/lightline.vim'
-Plug 'connorholyday/vim-snazzy'
+" https://github.com/nordtheme/vim
+Plug 'arcticicestudio/nord-vim'
+" https://github.com/gcmt/wildfire.vim
+Plug 'gcmt/wildfire.vim'
+" https://github.com/tpope/vim-surround
+Plug 'tpope/vim-surround'
+" https://github.com/airblade/vim-gitgutter
 Plug 'airblade/vim-gitgutter'
+" https://github.com/dhruvasagar/vim-table-mode
+Plug 'dhruvasagar/vim-table-mode'
+" https://github.com/907th/vim-auto-save
 Plug '907th/vim-auto-save'
+" https://github.com/iamcco/markdown-preview.nvim
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" https://github.com/junegunn/fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 syntax on
-colorscheme snazzy
 set cursorline
-"highlight CursorLine cterm=NONE
-"highlight CursorLineNr cterm=NONE
+colorscheme nord
 
 set number
 set relativenumber
@@ -75,6 +82,9 @@ func! Compiler()
 		exec "MarkdownPreview"
 	endif
 endfunc
+
+" search current dir using ripgrep.
+nnoremap <C-f> :Rg<Space>
 
 source ~/.config/vim/snippits.vim
 
