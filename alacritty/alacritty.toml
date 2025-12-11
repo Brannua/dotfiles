@@ -6,7 +6,7 @@
 size = 24
 
 [window]
-opacity = 0.85
+opacity = 0.92
 dynamic_padding = true
 
 [keyboard]
