@@ -1,5 +1,5 @@
 export FZF_DEFAULT_OPTS="
 	--layout=reverse
-	--preview='bat --style=plain --color=always {}'
+	--preview='[[ \$(file --mime-type {}) =~ text/ ]] && bat --style=plain --color=always {}'
 	--no-scrollbar
 "
