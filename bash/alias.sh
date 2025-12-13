@@ -28,6 +28,7 @@ alias l="ls -alh"
 alias f=fish
 alias s=fastfetch
 alias b=bluetui
+alias p=pulsemixer
 
 alias proxy-on="export all_proxy='socks5://127.0.0.1:1080'"
 alias proxy-off="unset all_proxy"
