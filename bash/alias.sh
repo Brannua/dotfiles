@@ -38,4 +38,5 @@ alias intMoni="xrandr --output eDP-1 --auto --primary --output DP-1 --off"
 
 alias pk=pkill
 alias dl=yt-dlp
+alias rsync="rsync --progress"
 
