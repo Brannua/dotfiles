@@ -1,6 +1,6 @@
 #
 # alias for shell(bash,fish,...)
-# Some useful tools: trans, dysk
+# Some useful tools: trans, dysk, acpi
 #
 
 alias ..="cd .."
