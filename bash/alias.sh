@@ -1,6 +1,6 @@
 #
 # alias for shell(bash,fish,...)
-# Some useful tools: trans, yt-dlp
+# Some useful tools: trans, dysk
 #
 
 alias ..="cd .."
@@ -37,4 +37,5 @@ alias extMoni="xrandr --output DP-1 --auto --primary --output eDP-1 --off"
 alias intMoni="xrandr --output eDP-1 --auto --primary --output DP-1 --off"
 
 alias pk=pkill
+alias dl=yt-dlp
 
