@@ -77,7 +77,7 @@ nnoremap Q :q<CR>
 nnoremap R :source $MYVIMRC<CR>
 nnoremap E :edit $MYVIMRC<CR>
 
-nnoremap r :call Compiler()<CR>
+nnoremap z :call Compiler()<CR>
 func! Compiler()
 	exec "w"
 	if &filetype == "markdown"
