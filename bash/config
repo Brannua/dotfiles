@@ -6,10 +6,11 @@
 [[ $- != *i* ]] && return
 
 PS1='[\u@\h \W]\$ '
-bind '"\C-l": clear-screen'
 
 [[ -f ~/.config/bash/env.sh ]] && . ~/.config/bash/env.sh
 [[ -f ~/.config/bash/alias.sh ]] && . ~/.config/bash/alias.sh
 [[ -f ~/.config/yazi/functions/wrapper.bash.zsh ]] && . ~/.config/yazi/functions/wrapper.bash.zsh
 [[ -f ~/.config/fzf/config.bash ]] && . ~/.config/fzf/config.bash
+
+bind '"\C-l": clear-screen'
 
