@@ -46,3 +46,6 @@ config.bind('gp', 'open -p')
 # save images
 config.bind('si', 'hint images download')
 
+# 模拟bilibili点按宽屏播放按钮
+config.bind('w', 'jseval (() => { const btn = document.querySelector(".bpx-player-ctrl-wide"); btn && btn.click(); })();')
+
