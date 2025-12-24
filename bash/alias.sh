@@ -40,3 +40,5 @@ alias pk=pkill
 alias dl=yt-dlp
 alias rsync="rsync --progress"
 
+alias py=python
+
