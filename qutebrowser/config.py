@@ -6,6 +6,8 @@ config.load_autoconfig(False)
 # === configs
 # ===
 
+config.source('colors.py')
+
 c.url.start_pages = "file:///dev/null"  # start page
 c.url.default_page = "file:///dev/null" # new_tab page
 
@@ -13,8 +15,8 @@ c.url.default_page = "file:///dev/null" # new_tab page
 c.content.blocking.enabled = True
 
 # tabs
-c.tabs.show = "multiple"
-c.tabs.position = "top"
+c.tabs.show = "never"
+c.tabs.position = "right"
 
 # statusbar
 c.statusbar.show = "always"
@@ -48,4 +50,9 @@ config.bind('si', 'hint images download')
 
 # 模拟bilibili点按宽屏播放按钮
 config.bind('w', 'jseval (() => { const btn = document.querySelector(".bpx-player-ctrl-wide"); btn && btn.click(); })();')
+
+# 标签栏
+config.bind('.', 'config-cycle tabs.show always never')
+config.bind('<Ctrl-j>', 'tab-move +')
+config.bind('<Ctrl-k>', 'tab-move -')
 
