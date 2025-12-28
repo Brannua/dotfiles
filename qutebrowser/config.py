@@ -37,8 +37,11 @@ config.bind('sd', 'set colors.webpage.darkmode.enabled False')
 
 # tabs show
 config.bind('.', 'config-cycle tabs.show always never')
-config.bind('<Ctrl-j>', 'tab-move +')
-config.bind('<Ctrl-k>', 'tab-move -')
+
+config.bind('<Ctrl-j>', 'tab-next')
+config.bind('<Ctrl-k>', 'tab-prev')
+config.bind('<Shift-j>', 'tab-move +')
+config.bind('<Shift-k>', 'tab-move -')
 
 # bilibili
 config.bind('w', 'jseval (() => { const btn = document.querySelector(".bpx-player-ctrl-wide"); btn && btn.click(); })();')
