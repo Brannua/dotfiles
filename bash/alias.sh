@@ -1,6 +1,9 @@
 #
 # alias for shell(bash,fish,...)
-# Some useful tools: trans, dysk, acpi
+# Some useful tools are under below.
+# dysk: https://github.com/Canop/dysk
+# tlrc: https://github.com/tldr-pages/tlrc
+# acpi: https://sourceforge.net/projects/acpiclient/files/acpiclient
 #
 
 alias ..="cd .."
