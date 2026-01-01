@@ -1,13 +1,6 @@
 [mgr]
 linemode = "permissions"
 
-[preview]
-max_width = 65535 # u16
-max_height= 65535 # u16
-
-[tasks]
-image_bound=[15000,15000]
-
 [opener]
 play = [
 	{ run = 'vlc "$@"', orphan = true, for = "unix" },
