@@ -2,8 +2,8 @@
 linemode = "permissions"
 
 [preview]
-max_width = 99999999
-max_height= 99999999
+# max_width = 65535 # u16
+# max_height= 65535 # u16
 
 [tasks]
 image_bound=[15000,15000]
