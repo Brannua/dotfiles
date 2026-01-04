@@ -52,6 +52,6 @@ config.bind('gp', 'open -p')
 # save images
 config.bind('si', 'hint images download')
 
-config.bind('j', 'scroll-px 0 200')
-config.bind('k', 'scroll-px 0 -200')
+config.bind('j', 'scroll-px 0 50')
+config.bind('k', 'scroll-px 0 -50')
 
