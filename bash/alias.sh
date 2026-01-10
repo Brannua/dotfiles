@@ -34,8 +34,8 @@ alias s=fastfetch
 alias b=bluetui
 alias p=pulsemixer
 
-alias proxy-on="export all_proxy='socks5://127.0.0.1:1080'"
-alias proxy-off="unset all_proxy"
+# alias proxy-on="export all_proxy='socks5://127.0.0.1:1080'"
+# alias proxy-off="unset all_proxy"
 
 alias extMoni="xrandr --output DP-1 --auto --primary --output eDP-1 --off"
 alias intMoni="xrandr --output eDP-1 --auto --primary --output DP-1 --off"
