@@ -21,15 +21,15 @@ c.url.default_page = "file:///dev/null" # new_tab page
 c.content.blocking.enabled = True
 
 # proxy
-# c.content.proxy = "socks5://127.0.0.1:1080"
+c.content.proxy = "socks5://127.0.0.1:10808"
 
 #
 # bindings
 #
 
 # proxy
-# config.bind('ep', 'set content.proxy socks5://127.0.0.1:1080')
-# config.bind('sp', 'set content.proxy none')
+config.bind('ep', 'set content.proxy socks5://127.0.0.1:10808')
+config.bind('sp', 'set content.proxy none')
 
 # dark mode
 config.bind('ed', 'set colors.webpage.darkmode.enabled True')

@@ -73,7 +73,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # rofi( a more modern replacement for dmenu )
-bindsym $mod+d exec "rofi -modes 'run,window' -show run"
+bindsym $mod+d exec "rofi -show drun"
 
 # suspend
 bindsym $mod+Shift+x exec --no-startup-id "systemctl suspend"
