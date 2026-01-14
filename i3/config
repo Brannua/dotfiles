@@ -72,6 +72,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# gen-qrCode
+bindsym $mod+q exec alacritty --hold -e sh -c "xsel --clipboard --output | qrencode -t UTF8"
+
 # rofi( a more modern replacement for dmenu )
 bindsym $mod+d exec "rofi -show drun"
 
