@@ -41,8 +41,10 @@ alias extMoni="xrandr --output DP-1 --auto --primary --output eDP-1 --off"
 alias intMoni="xrandr --output eDP-1 --auto --primary --output DP-1 --off"
 
 alias pk=pkill
-alias dl=yt-dlp
+alias py=python
 alias rsync="rsync --progress"
 
-alias py=python
+# playlist of bilibili: https://space.bilibili.com/37376741/lists/134983
+# singleVideo of bilibili: https://www.bilibili.com/video/BV1Jq4y1C77N
+alias dl=yt-dlp
 
