@@ -48,3 +48,5 @@ alias rsync="rsync --progress"
 # singleVideo of bilibili: https://www.bilibili.com/video/BV1Jq4y1C77N
 alias dl=yt-dlp
 
+alias date="TZ='Asia/Shanghai' date"
+
