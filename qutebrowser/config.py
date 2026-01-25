@@ -3,7 +3,7 @@ config.load_autoconfig(False)
 
 config.source('colors.py')
 
-c.zoom.default = 125
+c.zoom.default = 110
 c.fonts.default_size = "20px"
 
 c.tabs.show = "never"
