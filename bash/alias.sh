@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 #
 # alias for shell(bash,fish,...)
 # Some useful tools are under below.
