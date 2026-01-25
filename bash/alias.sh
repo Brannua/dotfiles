@@ -30,6 +30,7 @@ alias gd="git diff"
 alias gl="git log --all --graph"
 
 alias ls=eza
+alias sl=eza
 alias l="ls -alh"
 alias f=fish
 alias s=fastfetch
