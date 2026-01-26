@@ -12,6 +12,7 @@ PS1='[\u@\h \W]\$ '
 [[ -f ~/.config/bash/env.sh ]] && . ~/.config/bash/env.sh
 [[ -f ~/.config/bash/alias.sh ]] && . ~/.config/bash/alias.sh
 [[ -f ~/.config/bash/shell-options.sh ]] && . ~/.config/bash/shell-options.sh
+[[ -f ~/.config/bash/init-additional-programs.sh ]] && . ~/.config/bash/init-additional-programs.sh
 [[ -f ~/.config/yazi/functions/wrapper.bash.zsh ]] && . ~/.config/yazi/functions/wrapper.bash.zsh
 [[ -f ~/.config/fzf/config.bash ]] && . ~/.config/fzf/config.bash
 
