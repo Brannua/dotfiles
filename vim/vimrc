@@ -49,7 +49,6 @@ set termguicolors " enable true colors support.
 colorscheme ayu
 
 set number
-set relativenumber
 
 set tabstop=2
 set shiftwidth=2
