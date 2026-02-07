@@ -71,8 +71,6 @@ set ttimeoutlen=0 " when press esc, back to normal-mode right away.
 nnoremap s <nop>
 nnoremap S :w<CR>
 nnoremap Q :q<CR>
-nnoremap R :source $MYVIMRC<CR>
-nnoremap E :edit $MYVIMRC<CR>
 
 nnoremap z :call Compiler()<CR>
 func! Compiler()
