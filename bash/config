@@ -7,14 +7,25 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+# vim-mode for bash
+set -o vi
+
+# manage shell options for bash. Looking for help? run: tldr shopt
+shopt -s globstar
+
+# Primary Prompt
+# 当前路径:		\w
+# 当前主机:		\h
+# 颜色码:			\[\033[1;91m\] ~ \[\033[1;96m\] 为常用清新色系
+# 颜色恢复码:	\[\033[0m\]
+PS1='\[\033[1;93m\] [\w] \h: \[\033[0m\]'
+PS2=''
 
 [[ -f ~/.config/bash/env.sh ]] && . ~/.config/bash/env.sh
 [[ -f ~/.config/bash/alias.sh ]] && . ~/.config/bash/alias.sh
-[[ -f ~/.config/bash/shell-options.sh ]] && . ~/.config/bash/shell-options.sh
-[[ -f ~/.config/bash/init-additional-programs.sh ]] && . ~/.config/bash/init-additional-programs.sh
-[[ -f ~/.config/yazi/functions/wrapper.bash.zsh ]] && . ~/.config/yazi/functions/wrapper.bash.zsh
-[[ -f ~/.config/fzf/config.bash ]] && . ~/.config/fzf/config.bash
+[[ -f ~/.config/bash/keybindings.sh ]] && . ~/.config/bash/keybindings.sh
+[[ -f ~/.config/bash/init.sh ]] && . ~/.config/bash/init.sh
 
-bind '"\C-l": clear-screen'
+[[ -f ~/.config/fzf/config.bash ]] && . ~/.config/fzf/config.bash
+[[ -f ~/.config/yazi/functions/wrapper.bash.zsh ]] && . ~/.config/yazi/functions/wrapper.bash.zsh
 
