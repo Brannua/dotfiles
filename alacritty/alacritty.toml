@@ -1,9 +1,9 @@
 [font]
 # 用于内置显示器时
-# size = 14
+size = 14
 
 # 用于外接显示器时
-size = 24
+# size = 24
 
 [window]
 opacity = 0.92

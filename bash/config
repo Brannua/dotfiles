@@ -13,12 +13,12 @@ set -o vi
 # manage shell options for bash. Looking for help? run: tldr shopt
 shopt -s globstar
 
-# Primary Prompt
+# Primary Prompt \w|\h:
 # 当前路径:		\w
 # 当前主机:		\h
 # 颜色码:			\[\033[1;91m\] ~ \[\033[1;96m\] 为常用清新色系
 # 颜色恢复码:	\[\033[0m\]
-PS1='\[\033[1;93m\] [\w] \h: \[\033[0m\]'
+PS1='\[\033[1;93m\]\w|\h:\[\033[0m\]'
 PS2=''
 
 [[ -f ~/.config/bash/env.sh ]] && . ~/.config/bash/env.sh
