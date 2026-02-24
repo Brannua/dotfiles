@@ -6,7 +6,7 @@ let mapleader = ","
 let g:auto_save = 1
 let g:table_mode_corner='|'
 let g:lightline = { 'colorscheme': 'wombat' }
-let ayucolor="dark"
+let ayucolor="mirage"
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
