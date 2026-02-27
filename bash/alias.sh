@@ -11,7 +11,6 @@
 alias ..="cd .."
 alias k="i3-msg exit"
 
-alias q=exit
 alias c=clear
 alias open=xdg-open
 
