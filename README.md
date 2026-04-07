@@ -1,6 +1,6 @@
-将本目录的所有文件夹都链接到 ~/.config/ 去，
+将本目录的所有文件夹都链接到 ~/.config/
 
-然后自行编辑用户家目录~的配置文件如下
+自行编辑用户家目录如下
 
 ```sh
 -rw-r--r-- .bash_profile
@@ -22,4 +22,9 @@
 #
 [[ -f ~/.config/SDDM/xprofile ]] && . ~/.config/SDDM/xprofile 
 ```
+
+# 一些有用的软件
+
+- tlrc：tldr 的替代品 => https://github.com/tldr-pages/tlrc
+- acpi：用来展示电池信息的 => https://sourceforge.net/projects/acpiclient/files/acpiclient
 

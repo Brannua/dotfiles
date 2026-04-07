@@ -9,14 +9,9 @@ run  = "cd ~/Github/dotfiles/"
 desc = "Go dotfiles/"
 
 [[mgr.prepend_keymap]]
-on   = [ "g", "C" ]
-run  = "cd ~/.config/"
-desc = "Go .config/"
-
-[[mgr.prepend_keymap]]
 on   = [ "g", "d" ]
-run  = "cd ~/Documents/"
-desc = "Go Documents/"
+run  = "cd ~/Downloads/"
+desc = "Go Downloads/"
 
 [[mgr.prepend_keymap]]
 on   = [ "g", "v" ]

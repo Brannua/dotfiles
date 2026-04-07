@@ -1,7 +1,3 @@
-#
-# wrapper.bash.zsh
-#
-
 function r() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
   yazi "$@" --cwd-file="$tmp"
@@ -9,4 +5,3 @@ function r() {
   [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
   rm -f -- "$tmp"
 }
-

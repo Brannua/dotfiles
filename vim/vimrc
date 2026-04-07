@@ -1,87 +1,69 @@
-"
-" vimrc
-"
+" Disable the default Vim startup message.
+set shortmess+=I
 
-let mapleader = ","
-let g:auto_save = 1
-let g:table_mode_corner='|'
-let g:lightline = { 'colorscheme': 'wombat' }
-let ayucolor="mirage"
+" Always show the status line at the bottom, even if you only have one window open.
+set laststatus=2
 
-" Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
+" When press esc, back to normal-mode right away.
+set ttimeoutlen=0
 
-set runtimepath+=~/.vim
-
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-	\| PlugInstall --sync | source $MYVIMRC
-\| endif
-
-call plug#begin("~/.vim/plugged")
-" https://github.com/itchyny/lightline.vim
-Plug 'itchyny/lightline.vim'
-" https://github.com/gcmt/wildfire.vim
-Plug 'gcmt/wildfire.vim'
-" https://github.com/tpope/vim-surround
-Plug 'tpope/vim-surround'
-" https://github.com/airblade/vim-gitgutter
-Plug 'airblade/vim-gitgutter'
-" https://github.com/dhruvasagar/vim-table-mode
-Plug 'dhruvasagar/vim-table-mode'
-" https://github.com/907th/vim-auto-save
-Plug '907th/vim-auto-save'
-" https://github.com/iamcco/markdown-preview.nvim
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-" https://github.com/junegunn/fzf.vim
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-" https://github.com/ayu-theme/ayu-vim
-Plug 'ayu-theme/ayu-vim'
-call plug#end()
-
+" Turn on syntax highlighting.
 syntax on
-set cursorline
-set termguicolors " enable true colors support.
-colorscheme ayu
 
+" 视觉上 Tab 设置为 2 个空格的宽度
+set tabstop=2
+" 视觉上 缩进 设置为 2 个空格的宽度
+set shiftwidth=2
+" 按 Tab 键时，实际插入的是空格，这样代码在任何编辑器中对齐都不会混乱
+set expandtab
+
+" Show line numbers.
 set number
 
-set tabstop=2
-set shiftwidth=2
+" This enables relative line numbering mode. With both number and
+" relativenumber enabled, the current line shows the true line number, while
+" all other lines (above and below) are numbered relative to the current line.
+" This is useful because you can tell, at a glance, what count is needed to
+" jump up or down to a particular line, by {count}k to go up or {count}j to go
+" down.
+set relativenumber
 
-set incsearch
+" This setting makes search case-insensitive when all characters in the string
+" being searched are lowercase. However, the search becomes case-sensitive if
+" it contains any capital letters. This makes searching more convenient.
 set ignorecase
 set smartcase
-set hlsearch
-exec "nohlsearch"
 
-set wildmenu
-set updatetime=0 " default is 4000ms.
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
 
-set mouse=a
+" Unbind some useless/annoying default key bindings.
+nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
-set laststatus=2
-set noshowmode
-set ttimeoutlen=0 " when press esc, back to normal-mode right away.
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
+" Enable mouse support. You should avoid relying on this too much, but it can
+" sometimes be convenient.
+set mouse+=a
+
+" Try to prevent bad habits like using the arrow keys for movement. This is
+" not the only possible bad habit. For example, holding down the h/j/k/l keys
+" for movement, rather than using more efficient movement commands, is also a
+" bad habit. The former is enforceable through a .vimrc, while we don't know
+" how to prevent the latter.
+" Do this in normal mode...
+nnoremap <Left>  :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up>    :echoe "Use k"<CR>
+nnoremap <Down>  :echoe "Use j"<CR>
+" ...and in insert mode
+inoremap <Left>  <ESC>:echoe "Use h"<CR>
+inoremap <Right> <ESC>:echoe "Use l"<CR>
+inoremap <Up>    <ESC>:echoe "Use k"<CR>
+inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 nnoremap s <nop>
 nnoremap S :w<CR>
 nnoremap Q :q<CR>
-
-nnoremap z :call Compiler()<CR>
-func! Compiler()
-	exec "w"
-	if &filetype == "markdown"
-		exec "MarkdownPreview"
-	endif
-endfunc
-
-" search current dir using ripgrep.
-nnoremap <C-f> :Rg<Space>
-
-source ~/.config/vim/snippits.vim
 

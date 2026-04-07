@@ -1,24 +1,19 @@
-#!/usr/bin/sh
-
-#
-# Configuration file for bash.
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# vim-mode for bash
 set -o vi
 
-# manage shell options for bash. Looking for help? run: tldr shopt
+# shopt means 'shell options'
+# looking for help ? run: tldr shopt
 shopt -s globstar
 
-# Primary Prompt \w|\h:
-# 当前路径:		\w
-# 当前主机:		\h
-# 颜色码:			\[\033[1;91m\] ~ \[\033[1;96m\] 为常用清新色系
-# 颜色恢复码:	\[\033[0m\]
+# 命令提示符:		\w|\h:
+# 当前工作目录:	\w => means 'working directory'
+# 当前主机:			\h => means 'host'
+# 颜色码:				\[\033[1;91m\] ~ \[\033[1;96m\] 为常用清新色系
+# 颜色恢复码:		\[\033[0m\]
 PS1='\[\033[1;93m\]\w|\h:\[\033[0m\]'
+# 干掉换行前缀字符 '> '
 PS2=''
 
 # https://github.com/magicmonty/bash-git-prompt
@@ -28,10 +23,10 @@ if [ -f "$HOME/.config/bash-git-prompt/gitprompt.sh" ]; then
 fi
 
 [[ -f ~/.config/bash/env.sh ]] && . ~/.config/bash/env.sh
+[[ -f ~/.config/bash/binds.sh ]] && . ~/.config/bash/binds.sh
 [[ -f ~/.config/bash/alias.sh ]] && . ~/.config/bash/alias.sh
-[[ -f ~/.config/bash/keybindings.sh ]] && . ~/.config/bash/keybindings.sh
 [[ -f ~/.config/bash/init.sh ]] && . ~/.config/bash/init.sh
 
 [[ -f ~/.config/fzf/config.bash ]] && . ~/.config/fzf/config.bash
-[[ -f ~/.config/yazi/functions/wrapper.bash.zsh ]] && . ~/.config/yazi/functions/wrapper.bash.zsh
+[[ -f ~/.config/yazi/functions/wrapper.sh ]] && . ~/.config/yazi/functions/wrapper.sh
 

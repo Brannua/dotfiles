@@ -1,16 +1,14 @@
 [font]
-# 用于内置显示器时
-size = 14
-
-# 用于外接显示器时
-# size = 24
+size = 12		# 用于内置显示器时
+# size = 24	# 用于外接显示器时
 
 [window]
 opacity = 0.92
-dynamic_padding = true
+dynamic_padding = true # 始终保持终端窗口四周的内边距均匀分布
 
 [keyboard]
 bindings = [
-   { key = "Return", mods = "Super|Shift", action = "CreateNewWindow" }
+	# Super+Shift+Return，新建终端窗口 & 和当前工作目录保持一致
+	{ key = "Return", mods = "Super|Shift", action = "CreateNewWindow" }
 ]
 
