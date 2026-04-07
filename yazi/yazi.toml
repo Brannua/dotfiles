@@ -1,6 +1,12 @@
 [mgr]
 linemode = "permissions"
 
+[preview]
+# 4000 为随意指定的值，值的合理性可参考链接如下
+# https://github.com/sxyazi/yazi/pull/3313
+max_width = 4000
+max_height = 4000
+
 [opener]
 play = [
 	{ run = 'vlc "$@"', orphan = true, for = "unix" },
