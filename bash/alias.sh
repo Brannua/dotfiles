@@ -44,6 +44,6 @@ alias dl=yt-dlp
 
 # some useful options
 alias grep="grep --ignore-case"
-alias rsync="rsync --progress"
+alias rsync="rsync --archive --verbose --info=progress2"
 alias date="TZ='Asia/Shanghai' date"
 
