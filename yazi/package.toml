@@ -4,6 +4,6 @@ rev = "55bf699"
 hash = "7918aab6a71caf31b58411f789195677"
 
 [[flavor.deps]]
-use = "yazi-rs/flavors:dracula"
-rev = "9276ffa"
-hash = "7a870f143a4026a893ea3123be711e7a"
+use = "kmlupreti/ayu-dark"
+rev = "1da67a8"
+hash = "4358d2053d15bd6855968e2d4646c744"
