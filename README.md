@@ -1,5 +1,7 @@
 将本目录的所有文件夹都链接到 ~/.config/
 
+注意：还应将 ~/.config/tmux/tmux.conf 链接到 ~/.tmux.conf
+
 自行编辑用户家目录如下
 
 ```sh
