@@ -9,13 +9,22 @@ set ttimeoutlen=0
 
 " Turn on syntax highlighting.
 syntax on
+" https://github.com/sainnhe/everforest
+colorscheme everforest
+
+" 高亮匹配的括号，关闭该功能使用 :NoMatchParen
+set showmatch
+hi MatchParen ctermbg=white
+" test (    )
 
 " 视觉上 Tab 设置为 2 个空格的宽度
 set tabstop=2
-" 视觉上 缩进 设置为 2 个空格的宽度
-set shiftwidth=2
 " 按 Tab 键时，实际插入的是空格，这样代码在任何编辑器中对齐都不会混乱
 set expandtab
+" 视觉上 缩进 设置为 2 个空格的宽度
+" 场景举例
+" 写代码按缩进、自动对齐、代码格式化、>> 缩进、<< 反缩进，全都按 2 空格 来
+set shiftwidth=2
 
 " Show line numbers.
 set number
